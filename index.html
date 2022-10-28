@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="sign up.css">
+</head>
+<body>
+    <form class="lform" action="google.com" method="post">
+
+        <h1 id="lgn">Sign Up</h1>
+        <h1>|</h1>
+        <h1 id="sgnp"> <a href="Login_Page.html"> Login</a></h1>
+        <hr id="hhr">
+        <h2 id="lgn">Sign Up</h2> 
+        <input type="text" placeholder="Creat Username" required>
+
+        <input id="pswrd2" type="password" placeholder="Creat Password" required>
+        <p id="checkbx"><input id="checkb2" type="checkbox" onclick="myFunction2()">Show Password</p>
+        
+        <input id="pswrd" type="password" placeholder="Re-Enter Password" required>
+        
+        <p id="checkbx"><input id="checkb" type="checkbox" onclick="myFunction()">Show Password</p>
+        <input type="submit" value="Sign Up">
+       
+        
+    </form>
+    <script>
+
+function myFunction(){
+    var a = document.getElementById("pswrd");
+    if (a.type == "password"){
+        a.type= "text";
+    } else{
+        a.type="password";
+    }
+}
+
+function myFunction2(){
+    var a = document.getElementById("pswrd2");
+    if (a.type == "password"){
+        a.type= "text";
+    } else{
+        a.type="password";
+    }
+}
+
+    </script>
+    <div></div>
+</body>
+</html>
